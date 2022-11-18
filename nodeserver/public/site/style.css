@@ -1,0 +1,36 @@
+.ferias {
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    position: relative;
+    padding: 30px;
+    color: aliceblue;
+}
+
+.title {
+    font-size: 70px;
+    font-weight: 600;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    text-align: center;
+}
+
+.title-bottom {
+    font-size: 70px;
+    font-weight: 600;
+    width: 100%;
+    position: absolute;
+    top: 250px;
+    text-align: center;
+}
+
+#basicUsage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-size: 150px;
+    align-items: center;
+    justify-content: center;
+    color: brown;
+}

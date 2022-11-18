@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/easytimer@1.1.1/src/easytimer.min.js"></script>
+</head>
+
+<body>
+    <div class="ferias">
+        <strong class="title">Contagem regressiva para as férias</strong>
+        <div class="title-bottom">
+            <strong>Macho Véi</strong>
+            <img src="https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/608c62789889d5006a97ec45/4bdfdef8-a97a-47bb-a2ca-985b398ddc70/48" width="80" class="ghx-avatar-img" alt="Responsável: Tiago Dariel Gois Marques" data-tooltip="Responsável: Tiago Dariel Gois Marques"
+                original-title="">
+        </div>
+        <div id="basicUsage">00:00:00</div>
+
+    </div>
+
+    <script>
+        var timer = new Timer();
+        timer.start({
+            countdown: true,
+            startValues: {
+                hours: 5
+            }
+        });
+        timer.addEventListener('secondsUpdated', function(e) {
+            $('#basicUsage').html(timer.getTimeValues().toString());
+        });
+    </script>
+
+</body>
+
+</html>
